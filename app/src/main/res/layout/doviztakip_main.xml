@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    tools:context="com.example.barankaraboa.customspinner.dovizTakip"
+    android:background="#2c3e50">
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/spinner"
+        android:entries="@array/dizi"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/spinner_bg"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/dAlis"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_margin="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:paddingTop="5dp"
+        android:autoText="false"
+        android:background="@drawable/edit_arka"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:entries="@array/dizi"
+        android:id="@+id/spinner2"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_bg"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/editText2"
+        android:paddingTop="5dp"
+        android:background="@drawable/edit_arka"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/spinner2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chanceIcon"
+        android:src="@mipmap/chance6"
+        android:layout_above="@+id/spinner2"
+        android:layout_centerHorizontal="true" />
+
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.example.barankaraboa.doviztakip.artisTakip"
+        android:id="@+id/fragment"
+        tools:layout="@layout/doviz_artis"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/dAlis"
+        android:layout_marginBottom="28dp" />
+
+</RelativeLayout>

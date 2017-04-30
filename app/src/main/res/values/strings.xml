@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DovizTakip</string>
+    
+    <string-array name="dizi">
+        <item>Dolar</item>
+        <item>Euro</item>
+
+    </string-array>
+    
+</resources>

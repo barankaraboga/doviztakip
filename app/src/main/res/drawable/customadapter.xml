@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView android:id="@+id/left_pic" android:layout_width="100px" android:layout_height="80px" android:background="@mipmap/ic_launcher" /> <TextView android:id="@+id/text_main_seen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:layout_marginTop="2px" android:layout_toRightOf="@+id/left_pic" android:padding="3px" android:text="JMD Group" android:textColor="#0022ee" android:textSize="22px" android:textStyle="bold" /> <TextView android:id="@+id/sub_text_seen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/text_main_seen" android:layout_marginLeft="5dip" android:layout_toRightOf="@+id/left_pic" android:padding="2px" android:text="beyond the expectations..." android:textColor="#777777" />
+
+
+</selector>

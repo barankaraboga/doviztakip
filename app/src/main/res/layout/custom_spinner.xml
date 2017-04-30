@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView android:id="@+id/left_pic" android:layout_width="100px" android:layout_height="80px"
+       />
+    <TextView android:id="@+id/text_main_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5px"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@+id/left_pic"
+        android:paddingLeft="6px" android:text="Doviz"
+        android:textColor="#0022ee" android:textSize="22px"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
